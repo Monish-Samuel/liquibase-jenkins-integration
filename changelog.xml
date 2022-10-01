@@ -9,20 +9,20 @@
 		http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd
 		http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd">
 
-    <changeSet  id="2-2"  author="monish">  
+    <changeSet  id="2-3"  author="monish">  
          <sqlFile relativeToChangelogFile="true" path="update/insert.sql" />
 	 <rollback>
 		<sqlFile relativeToChangelogFile="true" path="rollback/insert.sql" />
 	</rollback>
     </changeSet> 
     
-<!--     <changeSet  id="7"  author="monish"> 
+    <changeSet  id="7-1"  author="monish"> 
          <loadUpdateData encoding="UTF-8" file="update/data.csv" separator="," primaryKey="id" tableName="user" schemaName="jenkins">
         	<column name="id" type="NUMERIC"/>
         	<column name="first_name" type="STRING"/>
 		<column name="last_name" type="STRING"/>
 		<column name="role" type="STRING"/>
     	</loadUpdateData>
-    </changeSet> -->
+    </changeSet>
 		
 </databaseChangeLog>
