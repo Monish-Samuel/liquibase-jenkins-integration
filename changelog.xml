@@ -11,5 +11,6 @@
 
     <changeSet  id="1"  author="monish">  
          <sqlFile relativeToChangelogFile="true" path="update/insert.sql">
+	</sqlFile>
     </changeSet> 
 </databaseChangeLog>
