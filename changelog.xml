@@ -12,4 +12,20 @@
     <changeSet  id="2"  author="monish">  
          <sqlFile relativeToChangelogFile="true" path="update/insert.sql" />
     </changeSet> 
+    
+    <changeSet  id="3"  author="monish" runOnChange="true">>  
+         <loadUpdateData
+            encoding="UTF-8"
+            file="update/data.csv"
+            quotchar=""
+            separator=","
+            primaryKey="id"
+            tableName="user">
+        	<column name="id" type="NUMERIC"/>
+        	<column name="first_name" type="STRING"/>
+		<column name="last_name" type="STRING"/>
+		<column name="role" type="STRING"/>
+    	</loadUpdateData>
+    </changeSet>
+		
 </databaseChangeLog>
