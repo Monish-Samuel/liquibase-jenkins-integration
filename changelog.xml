@@ -11,6 +11,9 @@
 
     <changeSet  id="2-1"  author="monish">  
          <sqlFile relativeToChangelogFile="true" path="update/insert.sql" />
+	 <rollback>
+		<sqlFile relativeToChangelogFile="true" path="rollback/insert.sql" />
+	</rollback>
     </changeSet> 
     
 <!--     <changeSet  id="7"  author="monish"> 
