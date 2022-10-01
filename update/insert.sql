@@ -25,3 +25,10 @@ WHERE
     NOT EXISTS (
         SELECT id FROM jenkins."user" WHERE id = 5
     );
+
+INSERT INTO jenkins."user" (id,first_name,last_name,role)
+SELECT 99,'Monish','Samuel','Manager'
+WHERE
+    NOT EXISTS (
+        SELECT id FROM jenkins."user" WHERE id = 00
+    );
