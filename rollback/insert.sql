@@ -1,1 +1,1 @@
-DELETE FROM TABLE jenkins."user" WHERE id=90
+DELETE FROM jenkins."user" WHERE id=90
