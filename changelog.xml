@@ -13,7 +13,7 @@
          <sqlFile relativeToChangelogFile="true" path="update/insert.sql" />
     </changeSet> 
     
-    <changeSet  id="3"  author="monish" runOnChange="true">>  
+    <changeSet  id="3"  author="monish"> 
          <loadUpdateData encoding="UTF-8" file="update/data.csv" separator="," primaryKey="id" tableName="user">
         	<column name="id" type="NUMERIC"/>
         	<column name="first_name" type="STRING"/>
