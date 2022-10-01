@@ -14,13 +14,7 @@
     </changeSet> 
     
     <changeSet  id="3"  author="monish" runOnChange="true">>  
-         <loadUpdateData
-            encoding="UTF-8"
-            file="update/data.csv"
-            quotchar=""
-            separator=","
-            primaryKey="id"
-            tableName="user">
+         <loadUpdateData encoding="UTF-8" file="update/data.csv" separator="," primaryKey="id" tableName="user">
         	<column name="id" type="NUMERIC"/>
         	<column name="first_name" type="STRING"/>
 		<column name="last_name" type="STRING"/>
